@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+		http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.scijava</groupId>
+        <artifactId>pom-scijava</artifactId>
+        <version>26.0.0</version>
+        <relativePath />
+    </parent>
+
+    <groupId>nl.nkiavl.rharkes</groupId>
+    <artifactId>ReplaceValues</artifactId>
+    <version>1.0.0</version>
+
+    <name>Replace Value</name>
+    <description>Can replace a single value by another value.</description>
+    <url>https://github.com/rharkes/ReplaceValues</url>
+    <inceptionYear>2019</inceptionYear>
+    <organization>
+        <name>Netherlands Cancer Institute</name>
+        <url>https://www.nki.nl/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>GPL v3</name>
+            <url>http://www.gnu.org/licenses/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>rharkes</id>
+            <name>Rolf Harkes</name>
+            <url>https://github.com/rharkes</url>
+        </developer>
+    </developers>
+    <contributors>
+        <contributor>
+            <name>Rolf Harkes</name>
+        </contributor>
+    </contributors>
+
+    <mailingLists>
+        <mailingList>
+            <name>ImageJ Forum</name>
+            <archive>http://forum.imagej.net/</archive>
+        </mailingList>
+    </mailingLists>
+
+    <scm>
+        <connection>scm:git:git://github.com/rharkes/ReplaceValues</connection>
+        <developerConnection>scm:git:rharkes@github.com:rharkes/ReplaceValues</developerConnection>
+        <tag>HEAD</tag>
+        <url>https://github.com/rharkes/ReplaceValues</url>
+    </scm>
+    <issueManagement>
+        <system>GitHub Issues</system>
+        <url>http://github.com/rharkes/ReplaceValues/issues</url>
+    </issueManagement>
+    <ciManagement>
+        <system>None</system>
+    </ciManagement>
+
+    <properties>
+        <main-class>ReplaceValue</main-class>
+        <license.licenseName>GPLv3</license.licenseName>
+        <license.copyrightOwners>Rolf Harkes</license.copyrightOwners>
+        <license.projectName>ReplaceValues plugin</license.projectName>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>imagej.public</id>
+            <url>http://maven.imagej.net/content/groups/public</url>
+        </repository>
+    </repositories>
+
+    <dependencies>        
+        <dependency>
+            <groupId>net.imagej</groupId>
+            <artifactId>imagej</artifactId>
+        </dependency>
+    </dependencies>
+</project>
